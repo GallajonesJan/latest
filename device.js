@@ -133,7 +133,7 @@ const loading = document.getElementById("loading");
 // SETTINGS
 // ----------------------------------------------------
 const esp32IP = "http://192.168.100.18";
-const backendURL = "http://192.168.100.13:5000/sensor-readings";
+const backendURL = "https://latestback-h32i.onrender.com/sensor-readings";
 
 let isConnected = false;
 let pollInterval = null;
@@ -305,3 +305,4 @@ connectBtn.addEventListener("click", async () => {
 });
 
 } // END OF "else" WRAPPER
+
