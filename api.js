@@ -1,6 +1,6 @@
 // frontend/js/api.js
 // ✅ Flask backend URL - CHANGE THIS TO YOUR COMPUTER'S IP
-const BASE_URL = 'http://192.168.100.13:5000';
+const BASE_URL = 'https://latestback-h32i.onrender.com';
 
 // Signup
 async function signup(fullname, age, email, password) {
@@ -90,3 +90,4 @@ async function apiFetch(endpoint, options = {}) {
   const text = await res.text();
   try { return JSON.parse(text); } catch { return text; }
 }
+
